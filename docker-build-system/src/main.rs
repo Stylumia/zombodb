@@ -342,7 +342,7 @@ fn git_clone(branch: &str, repodir: &PathBuf) -> Result<(), std::io::Error> {
         .arg("--single-branch")
         .arg("--branch")
         .arg(branch)
-        .arg("https://github.com/zombodb/zombodb.git")
+        .arg("https://github.com/Stylumia/zombodb.git")
         .arg(repodir.canonicalize().unwrap());
 
     println!("{} `{}` branch", "     Cloning".bold().green(), branch);
